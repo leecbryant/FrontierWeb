@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Project Frontier</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico?v=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</header>
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body, html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("images/main.jpg");
+        min-height: 100%;
+    }
+
+    .bar .button {
+        padding: 16px;
+    }
+</style>
+
+<body>
+        <!-- Navbar (sit on top) -->
+        <div class="top">
+            <div class="bar white card" id="myNavbar">
+                <a href="#home" class="bar-item button wide">Project Frontier</a>
+                <!-- Right-sided navbar links -->
+                <div class="right hide-small">
+                    <a href="#about" class="bar-item button">ABOUT</a>
+                    <a href="#team" class="bar-item button"><i class="fa fa-user"></i> TEAM</a>
+                    <a href="#resources" class="bar-item button"><i class="fa fa-book"></i> RESOURCES</a>
+                </div>
+                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+                <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium" onclick="bar_open()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav class="sidebar bar-block black card animate-left hide-medium hide-large" style="display:none" id="mySidebar">
+            <a href="javascript:void(0)" onclick="bar_close()" class="bar-item button large padding-16">Close ×</a>
+            <a href="#about" onclick="bar_close()" class="bar-item button">ABOUT</a>
+            <a href="#team" onclick="bar_close()" class="bar-item button">TEAM</a>
+            <a href="#resources" onclick="bar_close()" class="bar-item button">RESOURCES</a>
+        </nav>
+        <!-- Header with full-height image -->
+        <header class="bgimg-1 display-container grayscale-min" id="home">
+            <div class="img-text">
+                <div class="display-left text-white bg-black" style="padding:48px">
+                    <span class="jumbo hide-small">Project Frontier</span><br>
+                    <span class="xxlarge hide-large hide-medium">Project Frontier</span><br>
+                    <span class="large">CS 426 Senior Project in Computer Science</span></br>
+                    <span class="large">Spring 2020, University of Nevada, Reno, CSE Department</span>
+                    <p><a href="#about" class="button white padding-large large margin-top opacity hover-opacity-off">Learn more</a></p>
+                </div>
+            </div>
+            <!-- <div class="display-bottomleft text-grey large" style="padding:24px 48px">
+                <i class="fa fa-facebook-official hover-opacity"></i>
+                <i class="fa fa-instagram hover-opacity"></i>
+                <i class="fa fa-snapchat hover-opacity"></i>
+                <i class="fa fa-pinterest-p hover-opacity"></i>
+                <i class="fa fa-twitter hover-opacity"></i>
+                <i class="fa fa-linkedin hover-opacity"></i>
+            </div> -->
+        </header>
+
+        <!-- About Section -->
+        <div class="container light-grey" style="padding:64px 16px" id="about">
+            <h3 class="center">ABOUT THE PROJECT</h3>
+            <h4 class="center">Abstract</h4>
+            <p class="center">
+                Blockchains LLC. is a company dedicated to improving the world through revolutionary block chain technology, 
+                situated on about 67,000 acres of land in northern Nevada. In the process of purchasing that land for their business, 
+                they also inherited the wild horses that live on that land. Team #02’s project is to ensure that the wild horses can live safe, 
+                healthy lives through the use of the team’s project to identify and keep up to date vaccination records for wild horses. 
+            </p>
+            <h4 class="center">
+                Main Goals and Objectives
+            </h4>
+            <p class="center">
+                The primary goal of Team #02 is to create a mobile application that is capable of searching for wild horses based on their physical attributes.
+            </p>
+            <h4 class="center">
+                Main Functionality and Characteristics
+            </h4>
+            <p class="center">
+                The application will be loaded through an iOS device. The user will be able to search through horses by name, location, or features as a main functionality. 
+                Additionally the user will be able to log in and do certain actions based on their status, such as generate reports or edit horse records. 
+                When pulling up a horse record the user will be able to see information on the horse as well as its band members.
+            </p>
+            <h4 class="center">
+                Intended Users
+            </h4>
+            <p class="center">
+                The intended users of this app are darters working with the American Wild Horse Society and Blockchain LLC to administer medicine and birth control to wild horses. 
+                This audience includes field darters, herd leaders, and admin profiles that all have different user needs. This app may later be expanded to be used by other groups 
+                seeking to monitor and cater to the needs of wild horse populations.
+            </p>
+            <h4 class="center">
+                Technology Description
+            </h4>
+            <p class="center">
+                The main technology that will be used to create the application is Apple’s Swift and XCode. Working together with Blockchain LLC the team will create an API to 
+                allow it to interface with the data for the horses.
+            </p>
+            <h4 class="center">
+                Dependability 
+            </h4>
+            <p class="center">
+                This product has several key components that ensure the reliability, security and safety. To ensure reliability in the wilderness, 
+                the app will be designed to work largely without internet or cellular service. Security will be taken care of by the login software in the app. 
+                Only registered admins will be able to perform admin level actions, herd leaders will be the only users able to approve changes to their herd, 
+                and regular users will be limited in what they can do and access. Finally, the app will be safe by keeping complete control in the hands of the users. 
+                Instead of making a complete guess on which horse the user is searching for, the user will be able to look through bands and make an informed decision 
+                on which horse is which, minimizing possible damage to horses.
+            </p>
+        </div>
+
+        <!-- Team Section -->
+        <div class="container" style="padding:64px 16px" id="team">
+            <h3 class="center">MEMBERS OF TEAM #02</h3>
+            <div class="row-padding grayscale" style="margin-top:20px">
+                <!-- CS Students -->
+                <div class="col l3 m6 margin-bottom">
+                    <div class="card">
+                        <img src="images/gunnerhorse.png" alt="Gunner Stone" style="width:100%">
+                        <div class="container">
+                            <h3>Gunner Stone</h3>
+                            <p><button class="button light-grey block"><i class="fa fa-envelope"></i> Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m6 margin-bottom">
+                    <div class="card">
+                        <img src="images/leehorse.jpg" alt="Lee Bryant" style="width:100%">
+                        <div class="container">
+                            <h3>Lee Bryant</h3>
+                            <p><button class="button light-grey block"><i class="fa fa-envelope"></i> Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m6 margin-bottom">
+                    <div class="card">
+                        <img src="images/jacobhorse.jpg" alt="Jacob Spreitzer" style="width:100%">
+                        <div class="container">
+                            <h3>Jacob Spreitzer</h3>
+                            <p><button class="button light-grey block"><i class="fa fa-envelope"></i> Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m6 margin-bottom">
+                    <div class="card">
+                        <img src="images/alexishorse.jpg" alt="Dan" style="width:100%">
+                        <div class="container">
+                            <h3>Alexis Tudor</h3>
+                            <p><button class="button light-grey block"><i class="fa fa-envelope"></i> Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="center">INTERNAL/EXTERNAL ADVISORS</h3>
+            <div class="row-padding grayscale" style="margin-top:20px" >
+                <!-- CS Students -->
+                <div class="col l3 m6 margin-bottom">
+                    <div class="card">
+                        <img src="images/dascaluhorse.png" alt="Gunner Stone" style="width:100%">
+                        <div class="container">
+                            <h3>Dr. Sergiu Dascalu</h3>
+                            <p class="opacity">
+                                Professor
+                            </p>
+                            <p>
+                                Department of Computer Science and Engineering
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m6 margin-bottom">
+                    <div class="card">
+                        <img src="images/devrinhorse.png" alt="Lee Bryant" style="width:100%">
+                        <div class="container">
+                            <h3>Devrin Lee</h3>
+                            <p class="opacity">
+                                Professor
+                            </p>
+                            <p>
+                                Department of Computer Science and Engineering
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3 m6 margin-bottom">
+                    <div class="card">
+                        <img src="images/sena.jpg" alt="Sena Loyd" style="width:100%">
+                        <div class="container">
+                            <h3>Sena Loyd</h3>
+                            <p class="opacity">
+                                External Advisor
+                            </p>
+                            <p>
+                                Blockchains LLC
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESOURCE Section -->
+        <div class="container light-grey" style="padding:64px 16px" id="resources">
+            <h3 class="center">PROJECT RELATED RESOURCES</h3>
+            <h4 class="center">DOMAIN RELATED RESOURCES</h4>
+            <p class="center"> 
+                <a href="https://www.amazon.com/Horse-Markings-Coloration-F-DeMouthe-Smith/dp/0498017516">PROBLEM DOMAIN BOOK: Horse Markings and Coloration</a>
+            </p>
+            <p class="center"> 
+                <a href="http://d2w7gersd1ix5b.cloudfront.net/files.ashx?t=fg&rid=TheBigE&f=colorsandmarkings.pdf">COLORS AND MARKINGS GENERAL KNOWLEDGE STUDY GUIDE</a>
+            </p>
+            <p class="center"> 
+                <a href="https://www.nytimes.com/2018/11/01/technology/nevada-bitcoin-blockchain-society.html">NEW YORK TIMES ARTICLE ON OUR PURPOSE'S BACKGROUND</a>
+            </p>
+            <p class="center"> 
+                <a href="https://apnews.com/16fbb45cb0034f0aa71293b15d0b9b9d">WHY HORSE BIRTH-CONTROL DARTERS ARE IMPORTANT</a>
+            </p>
+            <h4 class="center">TECHNICAL RELATED RESOURCES</h4>
+            <p class="center"> 
+                <a href="https://developer.apple.com/swift/resources/">SWIFT/XCODE DOCUMENTATION</a>
+            </p>
+            <p class="center"> 
+                <a href="https://www.w3schools.com/">W3CSCHOOLS</a>
+            </p>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="center padding-64">
+            <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+            <!-- <div class="xlarge section">
+                <i class="fa fa-facebook-official hover-opacity"></i>
+                <i class="fa fa-instagram hover-opacity"></i>
+                <i class="fa fa-snapchat hover-opacity"></i>
+                <i class="fa fa-pinterest-p hover-opacity"></i>
+                <i class="fa fa-twitter hover-opacity"></i>
+                <i class="fa fa-linkedin hover-opacity"></i>
+            </div> -->
+            <p>
+                <!-- Team #02 -->
+            </p>
+        </footer>
+</body>
+<div rel="stylesheet" class="se-pre-con"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+<script>
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function bar_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
+        }
+    }
+
+    // Close the sidebar with the close button
+    function bar_close() {
+        mySidebar.style.display = "none";
+    }
+</script>
+</html>
